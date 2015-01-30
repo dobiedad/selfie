@@ -1,3 +1,8 @@
 <h1>Selfies</h1>
 <p></p>
 <li><%= link_to "Sign Out".html_safe, destroy_user_session_path, method: "delete" %></li>
+
+<%= form_for @user_selfie,:remote => true, authenticity_token: true , :html => { :multipart => true } do |form| %>
+  <%= form.file_field :selfie %>
+  <%= form.submit 'Post Selfie',class:"sessions_button" %>
+<% end %>
