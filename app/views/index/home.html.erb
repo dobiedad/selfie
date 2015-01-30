@@ -1,5 +1,9 @@
 <h1>Selfies</h1>
-<p></p>
+
+<% @leaderboard_selfies.each do |selfie| %>
+  <%= image_tag selfie.selfie.url(:square) %>
+<% end %>
+
 <li><%= link_to "Sign Out".html_safe, destroy_user_session_path, method: "delete" %></li>
 
 <%= form_for @user_selfie,:remote => true, authenticity_token: true , :html => { :multipart => true } do |form| %>

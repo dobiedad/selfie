@@ -5,4 +5,9 @@ class UserSelfiesController < ApplicationController
   def user_selfie_params
    params.require(:user_selfie).permit(:selfie)
  end
+
+ def
+   
+ end
+
 end
