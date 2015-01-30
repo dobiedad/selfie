@@ -6,8 +6,5 @@ class UserSelfiesController < ApplicationController
    params.require(:user_selfie).permit(:selfie)
  end
 
- def
-   
- end
 
 end
