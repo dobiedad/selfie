@@ -5,6 +5,7 @@ gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.3'
 gem "paperclip", "~> 4.2"
 gem 'aws-sdk'
+gem 'remotipart', '~> 1.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
