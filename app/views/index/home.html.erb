@@ -1,7 +1,7 @@
 <h1>Selfies</h1>
 
 <% @leaderboard_selfies.each do |selfie| %>
-  <%= image_tag selfie.selfie.url(:square) %>
+  <%= image_tag selfie.selfie.url(:medium) %>
 <% end %>
 
 <li><%= link_to "Sign Out".html_safe, destroy_user_session_path, method: "delete" %></li>
